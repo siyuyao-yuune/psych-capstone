@@ -8,9 +8,9 @@ export class SubmitScoresService {
 
   constructor(public http : HttpClient) { }
 
-  scores_url : string = "https://crossfacerecognition.herokuapp.com/tasks/";
-  pre_url : string = "https://crossfacerecognition.herokuapp.com/preassessment/";
-  post_url : string = "https://crossfacerecognition.herokuapp.com/postassessment/";
+  scores_url : string = "https://psych-capstone.herokuapp.com/tasks/";
+  pre_url : string = "https://psych-capstone.herokuapp.com/preassessment/";
+  post_url : string = "https://psych-capstone.herokuapp.com/postassessment/";
 
   //general
   race : string;

@@ -17,7 +17,7 @@ export class GetProgressService {
       })
     };
   
-    return this.http.post('https://crossfacerecognition.herokuapp.com/userData/', {}, httpOptions);
+    return this.http.post('https://psych-capstone.herokuapp.com/userData/', {}, httpOptions);
   }
 
 }
