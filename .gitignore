@@ -7,4 +7,3 @@ auth.json
 *.key
 
 *.key.pub
-**/.DS_Store
