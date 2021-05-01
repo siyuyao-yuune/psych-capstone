@@ -4,6 +4,7 @@
   "description": "API backend for the CRD app",
   "main": "index.js",
   "scripts": {
+    "start": "concurrently \"react-scripts start\" \"cd node_modules/cors-anywhere/lib/ && npm run start\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
