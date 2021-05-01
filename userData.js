@@ -18,7 +18,7 @@ module.exports = {
         }
 
         const pgClient = new Client({
-            connectionString: process.env.DATABASE_URL,
+            connectionString: process.env.HEROKU_POSTGRESQL_AMBER_URL,
             ssl: true,
         });
 

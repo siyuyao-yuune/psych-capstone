@@ -6,10 +6,10 @@ module.exports = {
     start: async function(){
 
         // guard condition
-        if(typeof(process.env.DATABASE_URL) === 'undefined'){
+        if(typeof(process.env.HEROKU_POSTGRESQL_AMBER_URL) === 'undefined'){
             try{
                 var auth = require("./auth.json");
-                process.env.DATABASE_URL = auth.DATABASE_URL;
+                process.env.HEROKU_POSTGRESQL_AMBER_URL = auth.HEROKU_POSTGRESQL_AMBER_URL;
             }
             catch{
                 return new Promise(function(resolve, reject){
@@ -20,7 +20,7 @@ module.exports = {
         }
 
         const pgClient = new Client({
-            connectionString: process.env.DATABASE_URL,
+            connectionString: process.env.HEROKU_POSTGRESQL_AMBER_URL,
             ssl: true,
         });
 

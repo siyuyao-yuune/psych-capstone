@@ -33,6 +33,6 @@ Or include the '-l' parameter for a mobile view:
 Run this from root to start a server:
 ``node index.js``
 
-Must include an auth.json file with a DATABASE_URL parameter to connect to a database when running locally.
+Must include an auth.json file with a HEROKU_POSTGRESQL_AMBER_URL parameter to connect to a database when running locally.
 
   
